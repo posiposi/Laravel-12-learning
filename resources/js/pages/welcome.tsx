@@ -64,8 +64,8 @@ export default function Welcome() {
               <div key={card.id} className="max-w-sm overflow-hidden rounded-lg border border-gray-300 shadow-lg">
                 <img className="w-full" src="/images/tour_de_france.jpg" alt={card.title} />
                 <div className="px-6 py-4">
-                  <div className="mb-2 text-xl font-bold">{card.title}</div>
-                  <p className="text-base text-gray-700">
+                  <div className="mb-2 text-xl font-bold text-white">{card.title}</div>
+                  <p className="text-base text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem
                     praesentium nihil.
                   </p>
