@@ -29,6 +29,8 @@ jobs:
           MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           DB_HOST: 'mysql'
+          DB_PORT: 3306
+          DB_CONNECTION: 'mysql'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
