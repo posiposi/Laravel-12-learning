@@ -49,7 +49,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Run Migrations
-        run: ./vendor/bin/sail artisan migrate
+        run: php artisan migrate
 
       - name: Tests
         run: ./vendor/bin/sail test
