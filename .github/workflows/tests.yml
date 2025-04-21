@@ -13,24 +13,6 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
-    services:
-      mysql:
-        image: mysql:8.0
-        ports:
-          - 3306:3306
-        options: >-
-          --health-cmd="mysqladmin ping --silent"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=3
-        env:
-          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-        #   MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
-        #   MYSQL_USER: ${{ secrets.MYSQL_USER }}
-        #   MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
-        #   DB_HOST: 'mysql'
-        #   DB_PORT: 3306
-        #   DB_CONNECTION: 'mysql'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
