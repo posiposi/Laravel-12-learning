@@ -46,7 +46,7 @@ jobs:
         run: ./vendor/bin/sail up -d mysql
 
       - name: Generate Application Key
-        run: ./vendor/bin/sail artisan key:generate
+        run: php artisan key:generate
 
       - name: Run Migrations
         run: ./vendor/bin/sail artisan migrate
