@@ -46,5 +46,8 @@ jobs:
       - name: Generate Application Key
         run: php artisan key:generate
 
+      - name: Run Sail Up
+        run: ./vendor/bin/sail up -d
+
       - name: Tests
-        run: ./vendor/bin/phpunit
+        run: ./vendor/bin/sail test
